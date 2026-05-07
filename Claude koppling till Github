@@ -1,67 +1,36 @@
-Här är en **optimerad och tydlig prompt** som du kan använda direkt med **Claude Code**. Den är skriven för att vara styrande, entydig och lämpad att läggas i `claude.md` i varje projekt.
+## Optimerad Claude Code + GitHub Prompt
 
-***
+**DIREKTA INSTRUKTIONER FÖR CLAUDE**
 
-## ✅ Optimerad prompt för Claude Code (GitHub‑anslutna projekt)
+### 1. Commits och Push (ALLTID)
+- Commita allt arbete med tydliga, små commits
+- Pusha omedelbar till `main` - inga opushade ändringar får lämnas
+- Commit-format: `verb: kort beskrivning (issue #123 om aktuellt)`
+- Exempel: `fix: handle null pointers in validator (issue #45)`
 
-**Roll och ansvar**
+### 2. GitHub Issues (för alla lösa trådar)
+- Skapa ett Issue för varje:
+  - Öppen fråga eller beslut
+  - Förbättring/refactoring som inte är akut
+  - Tech debt eller bug som hittas
+  - Feature-förslag eller design-frågor
+- Issue-titel: kort, action-orienterad
+- Issue-body: kontext från diskussionen + nästa steg
+- Uppdatera befintliga Issues istället för att duplicera
 
-Du är Claude Code och arbetar i ett projekt som är kopplat till ett GitHub‑repo. Du ansvarar för att kod, dokumentation och arbetsstatus alltid är synkroniserade mellan:
+### 3. Innan du avslutar en session
+Checklist:
+- ✅ Alla ändringar pushade till `main`
+- ✅ Alla lösa trådar är GitHub Issues
+- ✅ Kod är städad (ingen debug-kod, test-kod är committed)
+- ✅ README/docs uppdaterade om relevant
 
-*   chatten
-*   GitHub main branch
-*   GitHub Issues
+### 4. Chat + GitHub Samspel
+- Chat = diskussion, resonemang, snabba svar
+- Issues = spårning, status, långsiktig dokumentation
+- Håll båda uppdaterade parallellt (ignorera inte Issues bara för att vi diskuterar i chat)
 
-### 1. GitHub och kodhantering
-
-*   Alla ändringar som görs under sessionen **ska alltid committas och pushas till `main` branch**.
-*   Inga lokala eller opushade ändringar får lämnas kvar efter avslutad uppgift.
-*   Commits ska vara:
-    *   små och avgränsade
-    *   tydligt beskrivna
-    *   kopplade till relevant GitHub Issue (om sådan finns)
-
-### 2. Hantering av lösa trådar
-
-*   Alla identifierade:
-    *   öppna frågor
-    *   ofullständiga beslut
-    *   förbättringsförslag
-    *   tekniska skulder  
-        ska **alltid skapas som GitHub Issues**.
-*   Issues ska innehålla:
-    *   tydlig beskrivning
-    *   accepterade kriterier eller nästa steg
-*   Om ett Issue redan finns ska det:
-    *   uppdateras istället för att dupliceras
-    *   kommenteras med relevant kontext från chatten
-
-### 3. Samarbetsmodell
-
-Vårt samarbete sker parallellt via:
-
-*   chatten
-*   GitHub Issues (skapade och uppdaterade av både mig och dig)
-
-Det innebär att du alltid ska:
-
-*   hålla **main branch uppdaterad**
-*   hålla **GitHub Issues uppdaterade**, även när ändringar primärt diskuteras i chatten
-*   använda chatten för resonemang och beslut
-*   använda Issues för spårbarhet, uppföljning och arbetsstatus
-
-### 4. Projektstandard
-
-*   Dessa instruktioner **ska alltid finnas dokumenterade i `claude.md`** i varje projekt.
-*   Om `claude.md` saknas ska den skapas.
-*   Om innehållet avviker från denna instruktion ska filen uppdateras.
-
-### 5. Kontrollregel
-
-Innan du avslutar ett arbete ska du säkerställa att:
-
-*   ✅ alla ändringar är pushade till `main`
-*   ✅ alla lösa trådar är fångade som GitHub Issues
-*   ✅ relevant dokumentation är uppdaterad
-
-***
+### 5. claude.md
+- Dessa instruktioner ska finnas i varje projekts `claude.md`
+- Om filen saknas: skapa den
+- Om innehållet avviker: uppdatera det
